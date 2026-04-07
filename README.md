@@ -53,31 +53,22 @@ by a playbook → by an operative → by a debrief    → by the next playbook
 
 An asset that completes this cycle is compounding. An asset stuck at any stage is stalling. An asset untouched for multiple cycles is depreciating.
 
-## Asset spec
+## Provenance and chain of custody
 
-Every asset carries metadata so A Player OS can track it:
+Every asset carries metadata — not just what it is, but who made it, when, why, who's touched it since, and what keeps it alive. Without provenance, an asset is an artefact. With it, an asset is evidence.
 
-```yaml
----
-name: ee-design-tokens
-type: tokens
-created-by: playbooks/design
-last-touched-by: operatives/brand-monitor
-compounds-via: weekly brand audit operation
-status: active
----
-```
+Every asset answers six questions:
 
-| Field | What it tracks |
-|-------|---------------|
-| `name` | Human-readable identifier |
-| `type` | One of: tokens, specs, code, decisions, components, models |
-| `created-by` | Which playbook or skill produced it |
-| `last-touched-by` | Which stage last modified it |
-| `compounds-via` | Which operation or playbook keeps it current |
-| `status` | active, stale, deprecated |
+1. **Who created it** — which stage and skill produced it
+2. **When** — timestamp
+3. **What was happening** — the context that led to this asset existing
+4. **Where the proof is** — a commit, PR, or link traceable in under 60 seconds
+5. **Who touched it since** — full chain of custody, every modification logged
+6. **What keeps it alive** — which operation or playbook actively compounds it
 
-An asset with no `compounds-via` is undefended. A debrief should flag it.
+An asset with no compounding operation is undefended. A debrief should flag it.
+
+See [ASSET-SPEC.md](ASSET-SPEC.md) for the full schema, validity checks, confidence scoring, and status lifecycle.
 
 ## Structure
 
