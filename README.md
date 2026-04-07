@@ -99,7 +99,7 @@ Assets is the compound stage of [A Player OS](https://github.com/aplayerlabs/os)
 |-------|------|
 | Build | [aplayerlabs/playbooks](https://github.com/aplayerlabs/playbooks) |
 | Run | [aplayerlabs/operatives](https://github.com/aplayerlabs/operatives) |
-| Learn | aplayerlabs/debriefs |
+| Learn | [aplayerlabs/debriefs](https://github.com/aplayerlabs/debriefs) |
 | Compound | **aplayerlabs/assets** (this repo) |
 
 ## License
