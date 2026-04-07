@@ -1,6 +1,6 @@
 # Asset Spec
 
-How an asset is described, versioned, and tracked across the flywheel.
+How an asset is described, versioned, and tracked across A Player OS.
 
 ## Format
 

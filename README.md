@@ -1,6 +1,6 @@
 # Assets
 
-The center of the flywheel. Where compounding things live.
+The center of A Player OS. Where compounding things live.
 
 ```
             PLAYBOOKS
@@ -28,7 +28,7 @@ An asset is any durable artefact that compounds through reuse. Code, design syst
 
 **Debriefs** evaluate assets. Which assets are compounding? Which are depreciating? What should the next playbook build or rebuild?
 
-No stage owns an asset. All stages shape it. The flywheel accelerates because the assets at the center get better every turn.
+No stage owns an asset. All stages shape it. A Player OS accelerates because the assets at the center get better every turn.
 
 ## Asset types
 
@@ -43,7 +43,7 @@ No stage owns an asset. All stages shape it. The flywheel accelerates because th
 
 ## Asset lifecycle
 
-Every asset moves through the flywheel:
+Every asset moves through A Player OS:
 
 ```
 CREATED          CONSUMED          EVALUATED          IMPROVED
@@ -55,7 +55,7 @@ An asset that completes this cycle is compounding. An asset stuck at any stage i
 
 ## Asset spec
 
-Every asset carries metadata so the flywheel can track it:
+Every asset carries metadata so A Player OS can track it:
 
 ```yaml
 ---
@@ -91,9 +91,9 @@ assets/
 └── models/        ← trained models, prompts, agent configs
 ```
 
-## Part of the AI Flywheel
+## Part of A Player OS
 
-Assets is the compound stage of [The AI Flywheel](https://github.com/aplayerlabs/flywheel) by [A Player Labs](https://aplayerlabs.com).
+Assets is the compound stage of [A Player OS](https://github.com/aplayerlabs/os) by [A Player Labs](https://aplayerlabs.com).
 
 | Stage | Repo |
 |-------|------|
